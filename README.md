@@ -5,6 +5,8 @@ Initial Celer route for XCXDE
 
 See https://celer.pistonite.org/edit
 
+<img src="xcx_celer.png" alt="drawing" width="400"/>
+
 Presets
 -------
 Preset values are:
