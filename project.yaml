@@ -1,0 +1,37 @@
+title: Xenoblade X
+
+version: 1.0.0
+route:
+#  - Segment First:
+#      - Hello
+- use: ./route.yaml
+config:
+- map:
+    layers:
+    - name: Overworld
+      template-url: https://restite.org/xcx/tiles/{z}/tile_{x}_{y}.png
+      size: [1000, 1000]
+      max-native-zoom: 5
+      zoom-bounds: [1, 9]
+      transform:
+        translate: [512, 510]
+        scale: [2.84, -5.65]
+      start-z: 0
+      attribution:
+        link: https://frontiernav.net
+    coord-map:
+      "2d": ["x", "y"]
+      "3d": ["x", "y", "z"]
+    initial-coord: [0, 0, 0]
+    initial-zoom: 1
+    initial-color: "#ffffff00"
+- plugins:
+  - use: variables
+  - use: link
+- icons:
+    fnsite: https://icons.pistonite.org/icon/misc.frame.none.f24c99.ffc0fa.f24c99.ffc0fa.f24c99.ffc0fa.png
+    treasure: https://icons.pistonite.org/icon/misc.frame.none.633830.f0673a.633830.f0673a.633830.f0673a.png
+    lobster: https://icons.pistonite.org/icon/misc.frame.none.613b75.b96cf5.613b75.b96cf5.613b75.b96cf5.png
+    loc: https://icons.pistonite.org/icon/misc.frame.none.568c28.c8e6af.568c28.c8e6af.568c28.c8e6af.png
+- use: ./presets.yaml
+
