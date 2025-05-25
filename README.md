@@ -23,7 +23,7 @@ get things to align correctly.
 
 Data
 ----
-Mostly taken from the lovely maps / data at [frontiernav.net](https://frontiernav.net/wiki/xenoblade-chronicles-x/visualisations/maps)
+Taken from the lovely maps / data at [frontiernav.net](https://frontiernav.net/wiki/xenoblade-chronicles-x/visualisations/maps).  json file is from same site on 2025-05-25.
 
 License
 -------
