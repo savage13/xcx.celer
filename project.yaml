@@ -2,9 +2,16 @@ title: Xenoblade X
 
 version: 1.0.0
 route:
-#  - Segment First:
-#      - Hello
-- use: ./route.yaml
+  - Segment First:
+      - _Treasure::42
+      - _FNSite::106
+      - _StuffedLobster::4
+      - _Loc::LomothTheBeast-Eater
+
+# This includes all of the presets defined
+#   Use it as a reference to find specific presets
+#- use: ./route.yaml
+
 config:
 - map:
     layers:
@@ -22,9 +29,10 @@ config:
     coord-map:
       "2d": ["x", "y"]
       "3d": ["x", "y", "z"]
-    initial-coord: [0, 0, 0]
+    # Initial Coordinate (Starting Position)
+    initial-coord: [-35, -75, 20]
     initial-zoom: 1
-    initial-color: "#ffffff00"
+    initial-color: "#ffffff"
 - plugins:
   - use: variables
   - use: link
